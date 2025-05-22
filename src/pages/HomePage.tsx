@@ -180,7 +180,7 @@ const HomePage = () => {
       <ServicesSection />
       
       {/* CTA Section */}
-      <section className="py-20 main-gradient text-white">
+      <section className="py-20 bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-900 text-white">
         <div className="section-container text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -206,7 +206,7 @@ const HomePage = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <Link to="/contact" className="btn-secondary bg-white/10 backdrop-blur-md text-white border-white/30 hover:bg-white/20">
+            <Link to="/contact" className="btn-secondary bg-white/10 dark:bg-gray-800/30 backdrop-blur-md text-white border-white/30 dark:border-gray-700/30 hover:bg-white/20 dark:hover:bg-gray-700/50">
               {t.home.contactMe}
             </Link>
           </motion.div>
