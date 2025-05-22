@@ -14,11 +14,11 @@
 
 @layer components {
   .glassmorphism {
-    @apply bg-white/20 backdrop-blur-lg border border-white/30 shadow-lg;
+    @apply bg-white/20 dark:bg-gray-800/30 backdrop-blur-lg border border-white/30 dark:border-gray-700/30 shadow-lg;
   }
   
   .main-gradient {
-    @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 animate-gradient-shift bg-[length:200%_200%];
+    @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 dark:from-indigo-900 dark:via-purple-900 dark:to-blue-900 animate-gradient-shift bg-[length:200%_200%];
   }
   
   .section-container {
@@ -27,8 +27,8 @@
 
   .btn-primary {
     @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 
-           bg-gradient-to-r from-indigo-600 to-blue-600 text-white 
-           hover:from-indigo-700 hover:to-blue-700 transform hover:-translate-y-1 shadow-md;
+           bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-700 dark:to-blue-700 text-white 
+           hover:from-indigo-700 hover:to-blue-700 dark:hover:from-indigo-800 dark:hover:to-blue-800 transform hover:-translate-y-1 shadow-md;
   }
 
   .btn-secondary {
