@@ -16,16 +16,16 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-indigo-900 to-gray-900">
       {/* Hero Section with improved background */}
       <div className="relative h-[60vh] flex items-center overflow-hidden">
         {/* Animated gradient background */}
-        <div className="absolute inset-0 main-gradient"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-900"></div>
         
         {/* Animated shapes */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute w-64 h-64 -top-32 -left-32 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute w-96 h-96 -bottom-48 -right-48 bg-indigo-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute w-64 h-64 -top-32 -left-32 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute w-96 h-96 -bottom-48 -right-48 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute w-64 h-64 top-1/2 left-1/4 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
@@ -51,7 +51,7 @@ const ContactPage = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="glassmorphism rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+          <div className="bg-gray-800/30 backdrop-blur-md rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden border border-gray-700/30">
             {/* Background pattern */}
             <div className="absolute inset-0 opacity-5">
               <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,white_25%,white_50%,transparent_50%,transparent_75%,white_75%,white_100%)] bg-[length:20px_20px]"></div>

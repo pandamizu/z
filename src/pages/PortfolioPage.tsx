@@ -28,9 +28,9 @@ const PortfolioPage = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <section className="relative py-20 main-gradient text-white">
+    <div className="min-h-screen pt-16 dark:bg-gray-900">
+      {/* Hero Section - Updated gradient */}
+      <section className="relative py-20 bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-900 text-white">
         <div className="section-container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -46,8 +46,8 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* Stock Platforms Section */}
-      <section className="py-8 bg-white border-b border-gray-100">
+      {/* Stock Platforms Section - Updated for dark mode */}
+      <section className="py-8 bg-gray-800 border-b border-gray-700">
         <div className="section-container">
           <div className="flex flex-wrap justify-center gap-4">
             {stockPlatforms.map((platform) => (
@@ -56,14 +56,14 @@ const PortfolioPage = () => {
                 href={platform.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                className="flex items-center gap-3 px-4 py-2 bg-gray-700/50 dark:hover:bg-gray-600/50 rounded-lg transition-colors"
               >
-                <div className="p-2 bg-indigo-50 rounded-lg">
+                <div className="p-2 bg-indigo-900/50 rounded-lg">
                   {platform.icon}
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">{platform.name}</p>
-                  <p className="text-sm text-gray-600">{platform.description}</p>
+                  <p className="font-medium text-white">{platform.name}</p>
+                  <p className="text-sm text-gray-300">{platform.description}</p>
                 </div>
                 <ExternalLink className="w-4 h-4 text-gray-400" />
               </a>
@@ -72,8 +72,8 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="sticky top-16 z-20 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      {/* Category Filter - Updated for dark mode */}
+      <section className="sticky top-16 z-20 bg-gray-800/80 backdrop-blur-md border-b border-gray-700">
         <div className="section-container py-4">
           <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category) => (
@@ -83,7 +83,7 @@ const PortfolioPage = () => {
                 className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
                   activeCategory === category.id
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                 }`}
               >
                 {category.icon}
@@ -94,8 +94,8 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* Portfolio Grid */}
-      <section className="py-16 bg-gray-50">
+      {/* Portfolio Grid - Updated for dark mode */}
+      <section className="py-16 bg-gray-900">
         <div className="section-container">
           <AnimatePresence mode="wait">
             <motion.div
